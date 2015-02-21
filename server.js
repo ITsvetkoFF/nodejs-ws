@@ -6,7 +6,7 @@ var WebSocketServer = require('../../').Server
 app.use(express.static(__dirname + '/public'));
 
 var server = http.createServer(app);
-server.listen(8080);
+server.listen(8091);
 
 var wss = new WebSocketServer({server: server});
 wss.on('connection', function(ws) {
